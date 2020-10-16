@@ -5,11 +5,9 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-sliders.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
 
-A pure JavaScript `<Slider>` component for react-native. This is still very much a work
-in progress, ideas and contributions are very welcome.
+A pure JavaScript `<Slider>` component for react-native with multiple thumbs support.
 
-<img src="https://raw.githubusercontent.com/samin/react-native-sliders/master/Screenshots/basic@2x.png" width="375">
-<img src="https://raw.githubusercontent.com/samin/react-native-sliders/master/Screenshots/basic_android_xxhdpi.png" width="360">
+<img src="https://user-images.githubusercontent.com/8788/47452331-9aab1a80-d78f-11e8-8b86-cae26ad70bf6.png" width="375">
 
 It is a drop-in replacement for [Slider](http://facebook.github.io/react-native/docs/slider.html).
 
@@ -28,7 +26,7 @@ import { AppRegistry, StyleSheet, View, Text } from "react-native";
 
 class SliderExample extends React.Component {
   state = {
-    value: 0.2
+    value: [0.2, 0.5]
   };
 
   render() {
@@ -65,7 +63,7 @@ Try this example [live on Expo Snack](https://snack.expo.io/HkbAqpbwb).
 
 Prop                  | Type     | Optional | Default                   | Description
 --------------------- | -------- | -------- | ------------------------- | -----------
-value                 | number[]   | Yes      | 0                         | Initial value of the slider
+value                 | [number] | Yes      | 0                         | Initial value of the slider
 disabled              | bool     | Yes      | false                     | If true the user won't be able to move the slider
 minimumValue          | number   | Yes      | 0                         | Initial minimum value of the slider
 maximumValue          | number   | Yes      | 1                         | Initial maximum value of the slider
