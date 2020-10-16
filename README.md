@@ -1,39 +1,29 @@
-## react-native-slider
+## react-native-sliders
 
-[![npm version](http://img.shields.io/npm/v/react-native-slider.svg?style=flat-square)](https://npmjs.org/package/react-native-slider "View this project on npm")
-[![npm downloads](http://img.shields.io/npm/dm/react-native-slider.svg?style=flat-square)](https://npmjs.org/package/react-native-slider "View this project on npm")
-[![npm licence](http://img.shields.io/npm/l/react-native-slider.svg?style=flat-square)](https://npmjs.org/package/react-native-slider "View this project on npm")
-[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-slider "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/react-native-sliders.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
+[![npm downloads](http://img.shields.io/npm/dm/react-native-sliders.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
+[![npm licence](http://img.shields.io/npm/l/react-native-sliders.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-sliders "View this project on npm")
 
 A pure JavaScript `<Slider>` component for react-native. This is still very much a work
 in progress, ideas and contributions are very welcome.
 
-<img src="https://raw.githubusercontent.com/jeanregisser/react-native-slider/master/Screenshots/basic@2x.png" width="375">
-<img src="https://raw.githubusercontent.com/jeanregisser/react-native-slider/master/Screenshots/basic_android_xxhdpi.png" width="360">
+<img src="https://raw.githubusercontent.com/samin/react-native-sliders/master/Screenshots/basic@2x.png" width="375">
+<img src="https://raw.githubusercontent.com/samin/react-native-sliders/master/Screenshots/basic_android_xxhdpi.png" width="360">
 
 It is a drop-in replacement for [Slider](http://facebook.github.io/react-native/docs/slider.html).
 
 ## Install
 
 ```shell
-npm i --save react-native-slider
+npm i --save react-native-sliders
 ```
-
-**Note:** I try to maintain backward compatibility of this component with previous versions of React Native, but due to the nature of the platform, and the existence of breaking changes between releases, it is possible that you need to use a specific version of this component to support the exact version of React Native you are using. See the following table:
-
-| React Native version(s) | Supporting react-native-slider version(s) |
-|-------------------------|-------------------------------------------|
-| <0.25.0                 | <0.7.0                                    |
-| v0.25.x                 | v0.7.x                                    |
-| v0.26.0+                | v0.8.x                                    |
-| v0.43.0+                | v0.10.x                                   |
-| v0.44.0+                | v0.11.x                                   |
 
 ## Usage
 
 ```jsx
 import React from "react";
-import Slider from "react-native-slider";
+import Slider from "react-native-sliders";
 import { AppRegistry, StyleSheet, View, Text } from "react-native";
 
 class SliderExample extends React.Component {
@@ -75,7 +65,7 @@ Try this example [live on Expo Snack](https://snack.expo.io/HkbAqpbwb).
 
 Prop                  | Type     | Optional | Default                   | Description
 --------------------- | -------- | -------- | ------------------------- | -----------
-value                 | number   | Yes      | 0                         | Initial value of the slider
+value                 | number[]   | Yes      | 0                         | Initial value of the slider
 disabled              | bool     | Yes      | false                     | If true the user won't be able to move the slider
 minimumValue          | number   | Yes      | 0                         | Initial minimum value of the slider
 maximumValue          | number   | Yes      | 1                         | Initial maximum value of the slider
