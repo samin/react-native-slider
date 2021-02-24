@@ -158,10 +158,10 @@ export default class Slider extends PureComponent {
     /**
      * Sets an image for the thumb.
      */
-    thumbImage: PropTypes.oneOfType([
-      Image.propTypes.source,
-      PropTypes.arrayOf(Image.propTypes.source)
-    ]),
+    // thumbImage: PropTypes.oneOfType([
+    //   Image.propTypes.source,
+    //   PropTypes.arrayOf(Image.propTypes.source)
+    // ]),
 
     /**
      * Set this to true to visually see the thumb touch rect in green.
