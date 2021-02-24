@@ -7,11 +7,16 @@ import {
   PanResponder,
   View,
   Easing,
-  ViewPropTypes,
   I18nManager,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
+
+const ViewPropTypes = {
+  style:  PropTypes.shape({
+    style: PropTypes.any,
+  })
+};
 
 const TRACK_SIZE = 4;
 const THUMB_SIZE = 20;
