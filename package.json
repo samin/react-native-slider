@@ -1,6 +1,6 @@
 {
   "name": "react-native-sliders",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A pure JavaScript <Slider /> component for react-native with multiple sliders support",
   "main": "lib/Slider.js",
   "files": [
